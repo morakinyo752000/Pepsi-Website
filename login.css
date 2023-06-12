@@ -1,0 +1,56 @@
+body{
+   background: url('/static/images/3r.jpg')no-repeat center center/cover;
+   width: 5rem;
+   margin-top: 9rem;
+
+}
+
+.login-box{
+    margin-left: 24rem;
+}
+
+form{
+   display: center;
+}
+
+input{
+   padding: 0.7rem;
+    width: 30vw;
+    border-style: none;
+    outline: none;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+button{
+   padding: 0.8rem;
+   margin-left: 10rem;
+   width: 7vw;
+   outline: none;
+   border-style: none;
+   background-color: red;
+   color: white;
+   font-size: 18px;
+   border-radius: 7px;
+}
+
+label{
+  font-size: 20px;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+h1{
+   font-size: 40px;
+   padding-left: 130px;
+   color: white;
+
+}
+
+span{
+   color: red;
+}
+
+b{
+  color: blue;
+}

@@ -1,0 +1,79 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-image: url(Images/eww.jpg);
+    background-size: contain;
+    height: 1500px;
+}
+
+nav {
+    display: flex;
+    background-color:#0065c3; 
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+} 
+
+nav ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+nav ul li a{
+    display: flex;
+    color:whitesmoke;
+}
+
+nav ul img{
+    padding-right: 30px;
+
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.searchproducts a{
+    color: whitesmoke;
+    border:5px solid whitesmoke;
+    padding: 5px 25px;
+    border-radius:5px 20px; 
+        
+}
+
+.searchproducts {
+    list-style-type: none;
+}
+
+
+
+.photo{
+    padding-left: 80px;  
+    
+}
+
+
+.searchproducts a:hover {
+    color: black;
+}
+
+#para{
+font-family: ;
+    
+    
+}

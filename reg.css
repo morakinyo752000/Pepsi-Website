@@ -1,0 +1,52 @@
+body{
+   background: url('/static/images/pepsi-peeps.webp')no-repeat center center/cover;
+   width: 5rem;
+
+
+}
+form{
+padding: 1rem;
+}
+.right{
+   padding-left: 20rem;
+   margin-left: 12rem;
+
+}
+label{
+  font-size: 22px;
+  color: #fff;
+}
+
+input{
+  width: 24vw;
+  padding: 0.70rem;
+  margin: 0.50rem;
+  outline:  none;
+  border-radius: 10px;
+  border-style: none;
+}
+
+button{
+  padding: 0.72rem;
+  margin-left: 8rem;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  background-color: green;
+}
+
+
+h1{
+   font-size: 40px;
+   padding-left: 130px;
+   color: white;
+
+}
+
+span{
+   color: blue;
+}
+
+b{
+  color: red;
+}

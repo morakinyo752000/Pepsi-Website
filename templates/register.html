@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<section class="login-panel">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'reg.css' %}">
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+        <div class="right">
+          <h1><span>Si</span>gn<b>up</b></h1>
+            <label for="username">Username</label>
+               {{ form.username }}
+             <label for="email">Email</label>
+               {{ form.email }}
+             <label for="password1">Password</label>
+               {{ form.password1 }}
+             <label for="Password2">Confirm Password</label>
+               {{ form.password2 }}
+                {% if form.errors %}
+         {% for field in form%}
+            {% for error in field.errors %}
+                {{ error |escape }}
+           {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors  %}
+            {{error|escape }}
+         {% endfor %}
+         {% endif %}
+            <button type="submit" value="register">Register</button>
+        </div>
+
+ </form>
+
+    
+</body>
+</html>

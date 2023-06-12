@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-port" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Akin-Taylor</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo"><span>Pe</span><b>p</b>si</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="{% static 'images/Pepsi.mp4' %}" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2><span>PE</span><b>P</b>SI</h2>
+            <h3>PLAY TO INSPIRE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum debitis deleniti eos eveniet facere harum magnam nesciunt, odio officiis perspiciatis qui quibusdam recusandae sequi sunt! Doloremque in incidunt inventore nisi praesentium quis reiciendis, sunt.</p>
+
+        </div>
+
+        <ul class="social">
+            <li><a href="#"> <img src="{% static 'images/facebook.png' %}" width="50px" height="50px" alt=""></a></li>
+            <li><a href="#"> <img src="{% static 'images/instagram1.png' %}" width="50px" height="50px" alt=""></a></li>
+            <li><a href="#"> <img src="{% static 'images/twitter_light.png' %}" width="50px" height="50px" alt=""></a></li>
+        </ul>
+    </section>
+
+   <div class="menu">
+       <ul>
+           <li><a href="register/">Register</a></li>
+           <li><a href="{% url 'login' %}">Login</a></li>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste laborum mollitia non nostrum optio totam vero voluptas! Ducimus, est.</p>
+       </ul>
+   </div>
+   <script>
+       const menuToggle = document.querySelector('.toggle')
+       const showcase = document.querySelector('.showcase')
+
+       menuToggle.addEventListener('click', () => {
+       menuToggle.classList.toggle('active')
+       showcase.classList.toggle('active')
+       })
+   </script>
+</body>
+</html>
